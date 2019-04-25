@@ -108,7 +108,38 @@ return [
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
+        'PRINCIPAL',
+        [
+            'text' => 'Dashboard',
+            'url'  => 'home',
+            'icon' => 'dashboard',
+        ],
+
+        'CADASTROS',
+        [
+            'text' => 'Classificações',
+            'route'  => 'classifications.index',
+            'icon' => 'database',
+        ],
+        [
+            'text' => 'Fornecedores',
+            'url'  => 'admin/providers',
+            'icon' => 'building',
+        ],
+        [
+            'text' => 'Produtos',
+            'url'  => 'admin/products',
+            'icon' => 'shopping-cart',
+        ],
+
+        'ADMINISTRAÇÃO',
+        [
+            'text' => 'Profile',
+            'url'  => 'admin/profile',
+            'icon' => 'user',
+        ],
+    ],
+        /*'MAIN NAVIGATION',
         [
             'text' => 'Blog',
             'url'  => 'admin/blog',
@@ -128,6 +159,7 @@ return [
             'label'       => 42,
             'label_color' => 'danger',
         ],
+
         'ACCOUNT SETTINGS',
         [
             'text' => 'Profile',
@@ -139,6 +171,13 @@ return [
             'url'  => 'admin/settings',
             'icon' => 'lock',
         ],
+
+        [
+            'text' => 'Classifications',
+            'url'  => 'admin/settings',
+            'icon' => 'lock',
+        ],
+
         [
             'text'    => 'Multilevel',
             'icon'    => 'share',
@@ -190,7 +229,7 @@ return [
             'text'       => 'Information',
             'icon_color' => 'aqua',
         ],
-    ],
+    ],*/
 
     /*
     |--------------------------------------------------------------------------

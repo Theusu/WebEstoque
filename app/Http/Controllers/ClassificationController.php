@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Classification;
 use Illuminate\Http\Request;
 
 class ClassificationController extends Controller
@@ -13,7 +14,15 @@ class ClassificationController extends Controller
      */
     public function index()
     {
-        //
+        // Obtem todos os registros da tabela de classificação
+
+        $classifications = Classification::orderBy('id', 'desc')->paginate(6);
+     // Chama a view passando os dados retornados da tabela
+     return view(
+         'classifications.index',          [
+              'classifications' => $classifications
+          ]
+      );
     }
 
     /**
